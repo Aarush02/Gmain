@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Gmain</string>
+    <string name="signin">Sign in</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="register">Register</string>
+    <string name="enter_your_passward">Enter your passward</string>
+    <string name="Already_Registered">TextView</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="Register">Register</string>
+    <string name="register_with_phone_number">Register with Phone Number</string>
+    <string name="Phone_Number">Enter Phone Number</string>
+    <string name="verify">Verify</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="get_verification_code">Get Verification Code</string>
+    <string name="textView2">Already Registered? SIgn In here</string>
+    <string name="textView">Not yet regestered? Register here</string>
+    <string name="icon">TODO</string>
+</resources>

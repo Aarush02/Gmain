@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f2936">
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:autofillHints="no"
+        android:ems="10"
+        android:hint="@string/Phone_Number"
+        android:inputType="phone"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="#C9CFC9"
+        tools:targetApi="o"
+        tools:text="Enter Phone Number" />
+
+    <Button
+        android:id="@+id/buttonGetVerificationCode"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_verification_code"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/EditTextenterVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789"
+        android:hint="@string/enter_verification_code"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorHint="#C9CFC9"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/buttonVerify"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+
+</LinearLayout>

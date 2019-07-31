@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f2936">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints="no"
+            android:hint="@string/enter_your_email"
+            android:inputType="textEmailAddress"
+            android:textColor="#4CAF50"
+            android:textColorHint="#C9CFC9"
+            android:textSize="18sp"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/enter_your_passward"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="#C9CFC9"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="150dp"
+            android:text="@string/signin"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="Log In" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="90dp"
+            android:text="@string/textView"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="Not yet regestered? Register here" />
+    </LinearLayout>
+</LinearLayout>
