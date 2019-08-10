@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     android:background="#1f2936">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
         <EditText
             android:id="@+id/editEmail"
             android:layout_width="match_parent"
@@ -29,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:hint="@string/enter_your_passward"
+            android:hint="@string/enter_your_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
@@ -40,7 +35,7 @@
             android:id="@+id/buttonLogin"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:text="@string/signin"
             android:textColor="@color/colorPrimaryDark"
@@ -49,10 +44,9 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
             android:text="@string/textView"
             android:textColor="@color/colorPrimaryDark"
             tools:text="Not yet regestered? Register here" />
     </LinearLayout>
-</LinearLayout>

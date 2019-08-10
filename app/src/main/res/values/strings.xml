@@ -4,7 +4,7 @@
     <string name="sign_up">SIGN UP</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="register">Register</string>
-    <string name="enter_your_passward">Enter your passward</string>
+    <string name="enter_your_password">Enter your password</string>
     <string name="Already_Registered">TextView</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -16,7 +16,7 @@
     <string name="enter_verification_code">Enter Verification Code</string>
     <string name="get_verification_code">Get Verification Code</string>
     <string name="textView2">Already Registered? SIgn In here</string>
-    <string name="textView">Not yet regestered? Register here</string>
+    <string name="textView">Not yet Registered? Register here</string>
     <string name="buttonNewRegistrationForm">Registration Form</string>
     <string name="buttonNewEnquiryForm">Enquiry Form</string>
     <string name="buttonAccountManagement">Manage Account</string>

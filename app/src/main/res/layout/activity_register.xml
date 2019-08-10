@@ -5,14 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1f2936">
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="UselessParent">
-
         <EditText
             android:id="@+id/firstName"
             android:layout_width="183dp"
@@ -25,7 +17,6 @@
             android:textColorHint="#C9CFC9"
             tools:targetApi="o"
             tools:text="First Name" />
-
         <EditText
             android:id="@+id/lastName"
             android:layout_width="183dp"
@@ -37,8 +28,7 @@
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textColorHint="#C9CFC9"
             tools:targetApi="o"
-            tools:text="Last Nsme" />
-
+            tools:text="Last Name" />
         <EditText
             android:id="@+id/editEmail"
             android:layout_width="match_parent"
@@ -49,36 +39,32 @@
             android:inputType="textEmailAddress"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textColorHint="#C9CFC9"
-            tools:targetApi="o" />
-
+            tools:targetApi="o"/>
         <EditText
             android:id="@+id/editPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:hint="@string/enter_your_passward"
+            android:hint="@string/enter_your_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textColorHint="#C9CFC9"
             tools:targetApi="o" />
-
         <Button
             android:id="@+id/buttonRegister"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="150dp"
             android:text="@string/register"
             android:textColor="@color/colorPrimaryDark" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
             android:text="@string/textView2"
             android:textColor="@color/colorPrimaryDark"
             tools:text="Already Registered? SIgn In here" />
-    </LinearLayout>
 </LinearLayout>

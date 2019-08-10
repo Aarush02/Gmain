@@ -72,7 +72,7 @@ public class Signin extends AppCompatActivity implements View.OnClickListener {
                 progressDialog.dismiss();
                 if (task.isSuccessful()){
                     Toast.makeText(getApplicationContext(),"Successfully Logged in", Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(Signin.this,ProfileActivity.class);
+                    Intent intent=new Intent(Signin.this,HomePageActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
 

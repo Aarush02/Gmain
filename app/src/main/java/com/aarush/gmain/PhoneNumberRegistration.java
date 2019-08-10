@@ -85,7 +85,7 @@ public class PhoneNumberRegistration extends AppCompatActivity implements View.O
                             Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
 
                             // Sign in success, update UI with the signed-in user's information
-                            Intent intent = new Intent(PhoneNumberRegistration.this, ProfileActivity.class);
+                            Intent intent = new Intent(PhoneNumberRegistration.this, HomePageActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
 
