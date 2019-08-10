@@ -17,5 +17,10 @@
     <string name="get_verification_code">Get Verification Code</string>
     <string name="textView2">Already Registered? SIgn In here</string>
     <string name="textView">Not yet regestered? Register here</string>
+    <string name="buttonNewRegistrationForm">Registration Form</string>
+    <string name="buttonNewEnquiryForm">Enquiry Form</string>
+    <string name="buttonAccountManagement">Manage Account</string>
+    <string name="buttonCalenderManagement">Calender</string>
+    <string name="buttonMembershipManagement">Membership Management</string>
     <string name="icon">TODO</string>
 </resources>
