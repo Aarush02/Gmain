@@ -21,6 +21,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 import static com.aarush.gmain.R.id.buttonRegister;
@@ -93,7 +94,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                                 Toast.makeText(getApplicationContext(),"You are already registered", Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
 
                             }
                         }

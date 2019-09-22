@@ -46,10 +46,6 @@ public class PhoneNumberRegistration extends AppCompatActivity implements View.O
         findViewById(R.id.buttonGetVerificationCode).setOnClickListener(this);
         findViewById(R.id.buttonVerify).setOnClickListener(this);
 
-
-
-
-
         findViewById(R.id.buttonGetVerificationCode).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

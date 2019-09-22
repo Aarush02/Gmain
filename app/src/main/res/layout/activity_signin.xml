@@ -48,5 +48,5 @@
             android:layout_marginStart="90dp"
             android:text="@string/textView"
             android:textColor="@color/colorPrimaryDark"
-            tools:text="Not yet regestered? Register here" />
+            tools:text="Not yet registered? Register here" />
     </LinearLayout>
