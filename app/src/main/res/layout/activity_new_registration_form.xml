@@ -179,6 +179,15 @@
                 android:hint="Current Address"
                 android:inputType="text"
                 android:textSize="20sp" />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonrounded"/>
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </ScrollView>
