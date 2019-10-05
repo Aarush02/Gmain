@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1f2936">
@@ -15,35 +14,43 @@
         >
 
         <EditText
+            android:id="@+id/enquiry_form_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Name"
+            android:hint="@string/enquiry_form_name"
+            android:importantForAutofill="no"
             android:inputType="text"
+            android:textColor="#2D2F31"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
+            android:id="@+id/enquiry_form_gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gender"
+            android:layout_marginTop="10dp"
+            android:text="@string/enquiry_form_gender"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="20sp" />
+
         <androidx.appcompat.widget.AppCompatRadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Male"
-            android:textColor="@color/colorPrimaryDark"/>
+            android:id="@+id/enquiry_form_gender_male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enquiry_form_gender_male"
+            android:textColor="@color/colorPrimaryDark" />
+
         <androidx.appcompat.widget.AppCompatRadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Female"
-            android:textColor="@color/colorPrimaryDark"
-            />
+            android:id="@+id/enquiry_form_gender_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enquiry_form_gender_female"
+            android:textColor="@color/colorPrimaryDark" />
     </RadioGroup>
 
 
@@ -54,12 +61,15 @@
         android:layout_margin="10dp"
         android:textColorHint="@color/colorPrimaryDark"
         >
+
         <EditText
+            android:id="@+id/enquiry_form_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Phone Number"
-            android:inputType="number"
+            android:hint="@string/enquiry_form_phone_number"
+            android:importantForAutofill="no"
+            android:inputType="phone"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -71,11 +81,13 @@
         >
 
         <EditText
+            android:id="@+id/enquiry_form_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
-            android:inputType="text"
+            android:hint="@string/enquiry_form_email"
+            android:importantForAutofill="no"
+            android:inputType="text|textEmailAddress"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -91,26 +103,12 @@
 
 
         <EditText
+            android:id="@+id/enquiry_form_goal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Goal"
-            android:inputType="text"
-            android:textSize="20sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:focusableInTouchMode="true"
-        android:layout_margin="10dp"
-        android:textColorHint="@color/colorPrimaryDark"
-        >
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Gyming Experience"
+            android:hint="@string/enquiry_form_goal"
+            android:importantForAutofill="no"
             android:inputType="text"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -123,19 +121,46 @@
         >
 
         <EditText
+            android:id="@+id/enquiry_form_gyming_experience"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Address"
+            android:hint="@string/enquiry_form_gyming_experience"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Experience" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_margin="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        >
+
+        <EditText
+            android:id="@+id/enquiry_form_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enquiry_form_address"
+            android:importantForAutofill="no"
             android:inputType="text"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
+        android:id="@+id/buttonEnquiryRegister"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Register"
-        android:textSize="22sp"
-        android:textColor="#ffffff"
         android:layout_marginTop="50dp"
-        android:background="@drawable/buttonrounded"/>
+        android:background="@drawable/buttonrounded"
+        android:text="@string/enquiry_form__button_register"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
 </LinearLayout>

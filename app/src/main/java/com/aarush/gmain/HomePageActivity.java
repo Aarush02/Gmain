@@ -25,7 +25,6 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.buttonCalenderManagement).setOnClickListener(this);
         findViewById(R.id.buttonNewEnquiryForm).setOnClickListener(this);
 
-
     }
 
     @Override
