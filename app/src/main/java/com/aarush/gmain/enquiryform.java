@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
@@ -15,7 +16,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class enquiryform extends AppCompatActivity implements View.OnClickListener {
 
-    private FirebaseDatabase firebaseDatabase;
     private Button buttonEnquiry;
     private DatabaseReference databaseReference;
     private EditText editTextEnquiryUsername;
@@ -24,19 +24,18 @@ public class enquiryform extends AppCompatActivity implements View.OnClickListen
     private EditText editTextEnquiryGoal;
     private EditText editTextEnquiryGimmingExperiance;
     private EditText editTextEnquiryAddress;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enquiryform);
         databaseReference = FirebaseDatabase.getInstance().getReference("Enquiry Form");
-        buttonEnquiry = (Button) findViewById(R.id.buttonEnquiryRegister);
-        editTextEnquiryUsername = (EditText) findViewById(R.id.enquiry_form_username);
-        editTextEnquiryPnoneNumber = (EditText) findViewById(R.id.enquiry_form_phone_number);
-        editTextEnquiryEmail = (EditText) findViewById(R.id.enquiry_form_email);
-        editTextEnquiryGoal = (EditText) findViewById(R.id.enquiry_form_goal);
-        editTextEnquiryGimmingExperiance = (EditText) findViewById(R.id.enquiry_form_gyming_experience);
-        editTextEnquiryAddress = (EditText) findViewById(R.id.enquiry_form_address);
+        buttonEnquiry =  findViewById(R.id.buttonEnquiryRegister);
+        editTextEnquiryUsername =  findViewById(R.id.enquiry_form_username);
+        editTextEnquiryPnoneNumber =  findViewById(R.id.enquiry_form_phone_number);
+        editTextEnquiryEmail =  findViewById(R.id.enquiry_form_email);
+        editTextEnquiryGoal =  findViewById(R.id.enquiry_form_goal);
+        editTextEnquiryGimmingExperiance =  findViewById(R.id.enquiry_form_gyming_experience);
+        editTextEnquiryAddress =  findViewById(R.id.enquiry_form_address);
         findViewById(R.id.buttonEnquiryRegister).setOnClickListener(this);
     }
 

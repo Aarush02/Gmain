@@ -17,13 +17,14 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        buttonNewRegistrationForm = (Button) findViewById(R.id.buttonNewRegistrationForm);
-        buttonEnquiryForm = (Button) findViewById(R.id.buttonNewEnquiryForm);
-        buttonAccountManagement = (Button) findViewById(R.id.buttonAccountManagement);
-        buttonCalenderManagement = (Button) findViewById(R.id.buttonCalenderManagement);
-        buttonMembershipManagement = (Button) findViewById(R.id.buttonMembershipManagement);
+        buttonNewRegistrationForm =  findViewById(R.id.buttonNewRegistrationForm);
+        buttonEnquiryForm =  findViewById(R.id.buttonNewEnquiryForm);
+        buttonAccountManagement =  findViewById(R.id.buttonAccountManagement);
+        buttonCalenderManagement =  findViewById(R.id.buttonCalenderManagement);
+        buttonMembershipManagement =  findViewById(R.id.buttonMembershipManagement);
         findViewById(R.id.buttonCalenderManagement).setOnClickListener(this);
         findViewById(R.id.buttonNewEnquiryForm).setOnClickListener(this);
+        findViewById(R.id.buttonNewRegistrationForm).setOnClickListener(this);
 
     }
 
@@ -31,7 +32,7 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.buttonNewRegistrationForm:
-
+                startActivity(new Intent(this,NewRegistrationFormActivity.class));
                 break;
             case R.id.buttonCalenderManagement:
                 startActivity(new Intent(this,Calendermap.class));

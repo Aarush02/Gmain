@@ -22,10 +22,12 @@
             >
 
             <EditText
+                android:id="@+id/newRegistrationFormName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="@string/new_registration_form_name"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -33,24 +35,29 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
+                android:id="@+id/newRegistrationFormGender"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Gender"
+                android:layout_marginTop="10dp"
+                android:text="@string/new_registration_form_gender"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"/>
+                android:textSize="20sp" />
+
             <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/newRegistrationFormMale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Male"
-                android:textColor="@color/colorPrimaryDark"/>
+                android:text="@string/new_registration_form_male"
+                android:textColor="@color/colorPrimaryDark" />
+
             <androidx.appcompat.widget.AppCompatRadioButton
-                android:layout_width="wrap_content"
+                android:id="@+id/newRegistrationFormFemale"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Female"
-                android:textColor="@color/colorPrimaryDark"
-                />
+                android:text="@string/new_registration_form_female"
+                android:textColor="@color/colorPrimaryDark" />
         </RadioGroup>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -59,26 +66,14 @@
             android:layout_margin="10dp"
             android:textColorHint="@color/colorPrimaryDark"
             >
+
             <EditText
+                android:id="@+id/newRegistrationFormWeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Weight in kg"
-                android:inputType="number"
-                android:textSize="20sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusableInTouchMode="true"
-            android:layout_margin="10dp"
-            android:textColorHint="@color/colorPrimaryDark"
-            >
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Phone Number"
+                android:hint="@string/new_registration_form_weight_in_kg"
+                android:importantForAutofill="no"
                 android:inputType="number"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -91,11 +86,31 @@
             >
 
             <EditText
+                android:id="@+id/newRegistrationFormPhoneNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Email"
-                android:inputType="text"
+                android:hint="@string/new_registration_form_phone_number"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            >
+
+            <EditText
+                android:id="@+id/newRegistrationFormEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/new_registration_form_email"
+                android:importantForAutofill="no"
+                android:inputType="text|textEmailAddress"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,10 +126,12 @@
 
 
             <EditText
+                android:id="@+id/newRegistrationFormGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Goal"
+                android:hint="@string/new_registration_form_goal"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -127,10 +144,12 @@
             >
 
             <EditText
+                android:id="@+id/newRegistrationFormGymingExperiance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Gyming Experience"
+                android:hint="@string/new_registration_form_gyming_experience"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -143,10 +162,12 @@
             >
 
             <EditText
+                android:id="@+id/newRegistrationFormAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Address"
+                android:hint="@string/new_registration_form_address"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -157,11 +178,14 @@
             android:layout_margin="10dp"
             android:textColorHint="@color/colorPrimaryDark"
             >
+
             <EditText
+                android:id="@+id/newRegistrationFormMedicalProblem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Medical Problem(if any)"
+                android:hint="@string/new_registration_form_medical_problem_if_any"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -172,22 +196,27 @@
             android:layout_margin="10dp"
             android:textColorHint="@color/colorPrimaryDark"
             >
+
             <EditText
+                android:id="@+id/newRegistrationFormCurrentAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Current Address"
+                android:hint="@string/new_registration_form_current_address"
+                android:importantForAutofill="no"
                 android:inputType="text"
                 android:textSize="20sp" />
+
             <Button
+                android:id="@+id/buttonNewRegistration"
                 android:layout_width="200dp"
                 android:layout_height="60dp"
-                android:text="Register"
                 android:layout_gravity="center"
-                android:textSize="22sp"
-                android:textColor="#ffffff"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/buttonrounded"/>
+                android:background="@drawable/buttonrounded"
+                android:text="@string/new_registration_form_button_register"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 </ScrollView>

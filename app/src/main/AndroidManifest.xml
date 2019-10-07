@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NewEnquiryFormActivity" />
+        <activity android:name=".Calendermap" />
+        <activity android:name=".NewRegistrationFormActivity" />
         <activity android:name=".HomePageActivity" />
         <activity android:name=".enquiryform" />
         <activity android:name=".PhoneNumberRegistration" />

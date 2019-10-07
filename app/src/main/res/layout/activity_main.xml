@@ -62,9 +62,8 @@
         android:text="@string/register"
         android:textColor="#ffffff" />
 
-
-
-
-
-
 </LinearLayout>
+
+
+
+

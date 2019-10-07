@@ -6,47 +6,44 @@
     tools:context=".HomePageActivity"
     android:background="@drawable/homepage"
     android:orientation="vertical">
+
     <Button
         android:id="@+id/buttonNewRegistrationForm"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:text="@string/buttonNewRegistrationForm"
         android:textColor="@color/colorPrimaryDark" />
+
     <Button
         android:id="@+id/buttonNewEnquiryForm"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
         android:text="@string/buttonNewEnquiryForm"
         android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/buttonAccountManagement"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
         android:text="@string/buttonAccountManagement"
         android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/buttonCalenderManagement"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
         android:text="@string/buttonCalenderManagement"
         android:textColor="@color/colorPrimaryDark" />
 
     <Button
         android:id="@+id/buttonMembershipManagement"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="@string/buttonMembershipManagement"
         android:textColor="@color/colorPrimaryDark" />
 </LinearLayout>

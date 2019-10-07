@@ -41,5 +41,18 @@
     <string name="enquiry_form_gyming_experience">Gyming Experience</string>
     <string name="enquiry_form_address">Address</string>
     <string name="enquiry_form__button_register">Register</string>
+    <string name="new_registration_form_phone_number">Phone Number</string>
+    <string name="new_registration_form_name">Name</string>
+    <string name="new_registration_form_gender">Gender</string>
+    <string name="new_registration_form_male">Male</string>
+    <string name="new_registration_form_female">Female</string>
+    <string name="new_registration_form_weight_in_kg">Weight in kg</string>
+    <string name="new_registration_form_email">Email</string>
+    <string name="new_registration_form_goal">Goal</string>
+    <string name="new_registration_form_gyming_experience">Gyming Experience</string>
+    <string name="new_registration_form_button_register">Register</string>
+    <string name="new_registration_form_address">Address</string>
+    <string name="new_registration_form_medical_problem_if_any">Medical Problem(if any)</string>
+    <string name="new_registration_form_current_address">Current Address</string>
 
 </resources>

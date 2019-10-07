@@ -47,7 +47,7 @@
 
         <androidx.appcompat.widget.AppCompatRadioButton
             android:id="@+id/enquiry_form_gender_female"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/enquiry_form_gender_female"
             android:textColor="@color/colorPrimaryDark" />

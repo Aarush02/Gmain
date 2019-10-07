@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        signIn = (Button) findViewById(R.id.buttonLogin);
-        signUp = (Button) findViewById(R.id.sign_up);
-        Register_with_Phone_Number = (Button) findViewById(R.id.register_with_phone_number);
+        signIn =  findViewById(R.id.buttonLogin);
+        signUp =  findViewById(R.id.sign_up);
+        Register_with_Phone_Number =  findViewById(R.id.register_with_phone_number);
         firebaseAuth=FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
-        editTextEmail = (EditText) findViewById(R.id.editEmail);
-        editTextPassword = (EditText) findViewById(R.id.editPassword);
+        editTextEmail =  findViewById(R.id.editEmail);
+        editTextPassword =  findViewById(R.id.editPassword);
         findViewById(R.id.buttonLogin).setOnClickListener(this);
         findViewById(R.id.sign_up).setOnClickListener(this);
         findViewById(R.id.register_with_phone_number).setOnClickListener(this);
