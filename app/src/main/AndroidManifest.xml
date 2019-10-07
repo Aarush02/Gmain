@@ -10,13 +10,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity"></activity>
-        <activity android:name=".RegistrationFormActivity" />
+        <activity android:name=".NewEnquiryFormActivity" />
         <activity android:name=".HomePageActivity" />
         <activity android:name=".enquiryform" />
         <activity android:name=".PhoneNumberRegistration" />
         <activity android:name=".Register" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
