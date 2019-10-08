@@ -3,6 +3,10 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.aarush.gmain">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <dist:module dist:instant="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Calendermap" />
-        <activity android:name=".NewRegistrationFormActivity" />
+        <activity android:name=".RegistrationFormActivity"></activity>
         <activity android:name=".HomePageActivity" />
-        <activity android:name=".enquiryform" />
         <activity android:name=".PhoneNumberRegistration" />
+        <activity android:name=".Signin" />
         <activity android:name=".Register" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".StartActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,9 +27,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <dist:module dist:instant="true" />
 
 </manifest>
