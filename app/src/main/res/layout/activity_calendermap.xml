@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#1f2936"
-    android:background="#1f2936">
-    tools:context=".Calendermap">
+    android:background="#ffffff"
+    android:backgroundTint="#ffffff"
+    tools:context=".CalenderMap">
 
     <CalendarView
         android:id="@+id/calendarView"
@@ -23,11 +23,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/click_on_date_to_view_details"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="41dp" />
+
 </LinearLayout>

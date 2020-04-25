@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class enquiryform extends AppCompatActivity implements View.OnClickListener {
+public class EnquiryForm extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonEnquiry;
     private DatabaseReference databaseReference;
@@ -41,11 +41,10 @@ public class enquiryform extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.buttonEnquiryRegister:
-            {
+        if (view.getId()==R.id.buttonEnquiryRegister){
+
                 addEnquiryForm();
-            }
+
         }
     }
     private void addEnquiryForm(){

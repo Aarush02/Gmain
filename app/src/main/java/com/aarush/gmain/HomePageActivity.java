@@ -35,10 +35,10 @@ public class HomePageActivity extends AppCompatActivity implements View.OnClickL
                 startActivity(new Intent(this,NewRegistrationFormActivity.class));
                 break;
             case R.id.buttonCalenderManagement:
-                startActivity(new Intent(this,Calendermap.class));
+                startActivity(new Intent(this, CalenderMap.class));
                 break;
             case R.id.buttonNewEnquiryForm:
-                startActivity(new Intent(this,enquiryform.class));
+                startActivity(new Intent(this, EnquiryForm.class));
                 break;
         }
 

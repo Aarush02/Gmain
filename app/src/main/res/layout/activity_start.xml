@@ -6,5 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".StartActivity"
     android:background="@drawable/start_img">
+   
+
 
 </LinearLayout>

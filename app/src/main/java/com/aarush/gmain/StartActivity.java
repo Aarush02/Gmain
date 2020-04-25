@@ -7,19 +7,29 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.WindowManager;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class StartActivity extends AppCompatActivity {
-    private ProgressDialog progressDialog;
+
+private static int SPLASH_TIME_OUT=4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-
-
-        startActivity(new Intent(this, MainActivity.class));
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(StartActivity.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        },SPLASH_TIME_OUT);
 
     }
+
 }

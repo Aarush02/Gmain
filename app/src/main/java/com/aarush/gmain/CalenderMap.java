@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Calendermap extends AppCompatActivity {
+public class CalenderMap extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
